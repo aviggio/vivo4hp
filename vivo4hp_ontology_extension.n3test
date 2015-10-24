@@ -1,0 +1,135 @@
+@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix ns:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix aka:   <http://vivoweb.org/ontology/aka#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix wcmc:  <http://weill.cornell.edu/vivo/ontology/wcmc#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix vivoc: <http://vivo.library.cornell.edu/ns/0.1#> .
+@prefix config: <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix c4o:   <http://purl.org/spar/c4o/> .
+@prefix swvs:  <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix cce:   <http://vivoweb.org/ontology/cornell-cooperative-extension#> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix geo:   <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix aktp:  <http://www.aktors.org/ontology/portal#> .
+@prefix j.0:   <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix far:   <http://vitro.mannlib.cornell.edu/ns/reporting#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix skco:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix sce:   <http://vivoweb.org/ontology/SchoolOfContinuingEducation#> .
+@prefix stars: <http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix socsci: <http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#> .
+@prefix rdfsyn: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix mann:  <http://vivo.cornell.edu/ns/mannadditions/0.1#> .
+@prefix hr:    <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#> .
+@prefix hp:    <http://vivo4hp.org/ontology/hp#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix pubmed: <http://vitro.mannlib.cornell.edu/ns/pubmed#> .
+@prefix owl2:  <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix statistics: <http://purl.org/net/OCRe/statistics.owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix study_protocol: <http://purl.org/net/OCRe/study_protocol.owl#> .
+@prefix wos:   <http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#> .
+@prefix geopolitical: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix app:   <http://eagle-i.org/ont/app/1.0/> .
+@prefix ocresd: <http://purl.org/net/OCRe/study_design.owl#> .
+@prefix pvs:   <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ospcu: <http://vivoweb.org/ontology/cu-vivo-osp#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix acti:  <http://vivoweb.org/ontology/activity-insight#> .
+@prefix ai:    <http://vivoweb.org/ontology/activity-insight#> .
+@prefix ocrer: <http://purl.org/net/OCRe/research.owl#> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix core:  <http://vivoweb.org/ontology/core#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix local: <http://vivo.cornell.edu/ontology/local#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix ero:   <http://purl.obolibrary.org/obo/> .
+
+hp:Diplomat  a                   owl:Class ;
+        rdfs:label               "Diplomat"@en-US ;
+        rdfs:subClassOf          core:NonAcademic ;
+        ero:IAO_0000115          "A person holding, or who held, one or more diplomatic positions."^^xsd:string ;
+        vitro:displayLimitAnnot  "-1"^^xsd:int ;
+        vitro:displayRankAnnot   "-1"^^xsd:int ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup       <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+hp:TitleOfNobility  a            owl:Class ;
+        rdfs:label               "Title of Nobility"@en-US ;
+        rdfs:subClassOf          core:Award ;
+        ero:IAO_0000115          "A title of nobility"^^xsd:string ;
+        vitro:displayLimitAnnot  "-1"^^xsd:int ;
+        vitro:displayRankAnnot   "-1"^^xsd:int ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup       <http://vivoweb.org/ontology#vitroClassGrouppublications> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+hp:LifeEventBirth  a        owl:Class ;
+        rdfs:label          "Birth"@en-US ;
+        rdfs:subClassOf     hp:LifeEvent ;
+        ero:IAO_0000115     "Represents a person's birth event"^^xsd:string ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup  <http://vivoweb.org/ontology#vitroClassGroupevents> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+<http://vivo4hp.org/ontology/hp>
+        a                          owl:Ontology ;
+        rdfs:label                 "VIVO for Historical Persons"@en-US ;
+        vitro:ontologyPrefixAnnot  "hp"^^xsd:string .
+
+hp:LifeEvent  a                  owl:Class ;
+        rdfs:label               "Life Event"@en-US ;
+        rdfs:subClassOf          event:Event ;
+        ero:IAO_0000112          "Birth and death. Possibly marriage or divorce?"^^xsd:string ;
+        ero:IAO_0000115          "A significant life event."^^xsd:string ;
+        vitro:displayLimitAnnot  "-1"^^xsd:int ;
+        vitro:displayRankAnnot   "-1"^^xsd:int ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup       <http://vivoweb.org/ontology#vitroClassGroupevents> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+hp:LifeEventDeath  a        owl:Class ;
+        rdfs:label          "Death"@en-US ;
+        rdfs:subClassOf     hp:LifeEvent ;
+        ero:IAO_0000115     "Represents a person's death event"^^xsd:string ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup  <http://vivoweb.org/ontology#vitroClassGroupevents> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
